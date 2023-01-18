@@ -97,6 +97,9 @@ class CelebADataset(Dataset):
 
 
 class TestDataset(Dataset):
+    """
+        The test dataset module
+    """
     def __init__(self, imgs, resize=None):
         """
             Similar with CelebADataset 
