@@ -44,6 +44,9 @@ LEARNING_RATE = 0.001
 ########################### Dataset ###########################
 
 class CelebADataset(Dataset):
+    """
+        A customized dataset to load the CelebA image dataset.
+    """
     def __init__(self, img_path, imgs, labels, resize=None, inference=False):
         """
             img_path: str, the directory of celeba dataset 
@@ -136,6 +139,9 @@ class TestDataset(Dataset):
 
 
 class Trainer(object):
+    """
+        A learning pipeline to train and validate the model.
+    """
     def __init__(self, model, criterion, optimizer, max_epoch):
         """
             model: nn model
